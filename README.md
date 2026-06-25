@@ -3,6 +3,45 @@
 
 ---
 
+## Integrantes do Grupo
+
+- Agno Souza Seles Junior
+- Arthur Sales Valdivino
+- Erick de Moura Pereira
+- Guilherme Carvalho dos Santos
+- Heloisa Marques Figueiredo da Silva
+
+---
+
+## Representação Regional
+
+A Região Sul estará representada no site por meio da divulgação de notícias, informações culturais, econômicas e políticas dos estados do Paraná, Santa Catarina e Rio Grande do Sul. Além da cobertura jornalística, o portal destacará aspectos marcantes da identidade sulista, como tradições, eventos regionais, clima, economia e características culturais que contribuem para a formação da região.
+
+---
+
+## Paleta de Cores
+
+| Cor | Código Hexadecimal | Justificativa |
+| :--- | :--- | :--- |
+| Vermelho | #C62828 | Remete à cultura e às tradições da Região Sul, além de transmitir destaque e dinamismo ao portal. |
+| Verde | #2E7D32 | Representa as paisagens naturais, a agricultura e a forte presença de áreas verdes na região. |
+| Amarelo | #F9A825 | Simboliza desenvolvimento, prosperidade e complementa as cores associadas à identidade regional. |
+| Preto | #000000 | Utilizado para transmitir elegância, modernidade e contraste visual. |
+| Cinza | #757575 | Auxilia na organização visual e na hierarquia das informações. |
+| Branco | #FFFFFF | Garante limpeza visual, simplicidade e melhor legibilidade dos conteúdos. |
+
+A combinação de vermelho, verde e amarelo busca representar elementos associados à Região Sul, enquanto preto, cinza e branco foram escolhidos para criar uma identidade visual minimalista, moderna e agradável para a navegação.
+
+---
+
+## Wireframe
+
+**Link para o Wireframe:**
+
+[https://www.figma.com/design/X71ErvspgUrF9ke5mdT9UA/Site-Regional-do-Sul?node-id=0-1&t=yQa3oPzbgEh0jbPO-1]
+
+---
+
 ## Engenharia e Design do Projeto
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)

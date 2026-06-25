@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<title>Cultura — Sul</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/cultura.css"/>
+
+<style>
+  /* Garante que as imagens não quebrem o layout */
+  .card-img {
+    overflow: hidden;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-stripes" aria-hidden="true">
+<span class="s1"></span>
+<span class="s2"></span>
+<span class="s3"></span>
+<span class="s4"></span>
+</div>
+
+
+<div class="topbar">
+
+<div class="topbar-left">
+
+<span class="topbar-date" id="js-date"></span>
+
+<div class="topbar-dolar">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="2" y="6" width="20" height="14" rx="2"/>
+<circle cx="12" cy="13" r="3"/>
+<path d="M16 6l-1-3H9L8 6"/>
+</svg>
+
+<span class="coin-label" id="coin-label">Dólar:</span>
+
+<span class="coin-val" id="coin-val" style="transition:opacity .2s">
+R$ —
+</span>
+
+<span class="coin-chg" id="coin-chg"></span>
+
+</div>
+</div>
+
+
+<div class="topbar-weather" id="js-wx"></div>
+
+</div>
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Início</a></li>
+
+<li><a href="politica.html">Política</a></li>
+
+<li><a href="economia.html">Economia</a></li>
+
+<li><a href="cultura.html" class="active">Cultura</a></li>
+
+<li><a href="tirinhas.html">Tirinhas</a></li>
+
+</ul>
+
+
+<div class="nav-actions">
+
+<button class="ico-btn" id="btn-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="11" cy="11" r="8"/>
+<path d="m21 21-4.35-4.35"/>
+</svg>
+</button>
+
+
+<button class="ico-btn" id="btn-login">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+<circle cx="12" cy="7" r="4"/>
+
+</svg>
+
+</button>
+
+</div>
+
+</nav>
+
+
+<div class="search-veil" id="search-veil">
+
+<div class="search-card">
+
+<input id="search-in"
+type="text"
+placeholder="Buscar em Cultura..."
+autocomplete="off"/>
+
+<p>
+Enter para buscar · Esc para fechar
+</p>
+
+</div>
+
+</div>
+
+
+<div class="content">
+
+
+<div class="page-hero">
+
+<h1>
+Escolha um dos<br>
+nossos estados
+</h1>
+
+<p>
+Venha conhecer a cultura dos nossos estados
+</p>
+
+</div>
+
+
+
+<div class="state-selector" id="state-selector">
+
+
+<div class="state-pill" id="state-pill"></div>
+
+
+<button class="state-btn active" data-state="todos">
+Todos os estados
+</button>
+
+
+<button class="state-btn" data-state="pr">
+Paraná (PR)
+</button>
+
+
+<button class="state-btn" data-state="sc">
+Santa Catarina (SC)
+</button>
+
+
+<button class="state-btn" data-state="rs">
+Rio Grande do Sul (RS)
+</button>
+
+
+</div>
+
+
+
+<div class="news-content" id="news-content">
+
+
+
+<!-- ═══════════════════════════════════════════════
+     PANE: TODOS
+     ═══════════════════════════════════════════════ -->
+
+<div data-pane="todos">
+
+
+<p class="sec-label">
+Todas as notícias culturais
+</p>
+
+
+<div class="grid-main">
+
+
+<!-- NOTÍCIA 6 — Centre Pompidou Foz do Iguaçu (destaque) -->
+<a href="noticia.html?id=6" class="card-link">
+
+<div class="card feat">
+
+
+<div class="card-img" style="height:220px">
+  <!-- Cataratas do Iguaçu / região de Foz — Wikimedia Commons, CC BY-SA 2.0, Martin St-Amant -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Iguassu_falls_argentina_side.jpg/1280px-Iguassu_falls_argentina_side.jpg"
+    alt="Foz do Iguaçu, sede do Centre Pompidou na América Latina"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · PR
+</p>
+
+
+<h2 class="card-title">
+
+Centre Pompidou de Foz do Iguaçu: primeiro museu internacional da América Latina começa obras
+
+</h2>
+
+
+<p class="card-desc">
+
+Projeto coloca Foz do Iguaçu no mapa cultural mundial com novo espaço de arte internacional.
+
+</p>
+
+
+<p class="card-time">
+Abril de 2026 · Cultura PR
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+
+
+<div class="grid-side">
+
+
+<!-- NOTÍCIA 22 (side) — Festa do Pinhão Lages SC -->
+<a href="noticia.html?id=22" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Pinhão / araucária — Wikimedia Commons, CC BY-SA 3.0, Alexandre Moleiro -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Araucaria_angustifolia_in_Curitiba.jpg/640px-Araucaria_angustifolia_in_Curitiba.jpg"
+    alt="Araucária pinhão Lages Santa Catarina Festa do Pinhão"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · SC
+</p>
+
+
+<h3 class="card-title">
+
+Festa do Pinhão movimenta Lages com tradição e gastronomia
+
+</h3>
+
+
+<p class="card-time">
+Junho de 2026
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+
+
+<!-- NOTÍCIA 23 (side) — Festival Cultura Gaúcha RS -->
+<a href="noticia.html?id=23" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Dança gaúcha / tradição RS — Wikimedia Commons, CC BY 2.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Danc%CC%A7as_Tradicionais_Gau%CC%81chas.jpg/640px-Danc%CC%A7as_Tradicionais_Gau%CC%81chas.jpg"
+    alt="Danças tradicionais gaúchas Festival da Cultura RS"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · RS
+</p>
+
+
+<h3 class="card-title">
+
+Festival da Cultura Gaúcha reúne grupos do Sul
+
+</h3>
+
+
+<p class="card-time">
+Junho de 2026
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="grid-row">
+
+
+<!-- NOTÍCIA 29 — Festival de Cinema de Gramado RS -->
+<a href="noticia.html?id=29" class="card-link">
+
+<div class="card md">
+
+
+<div class="card-img" style="height:120px">
+  <!-- Gramado RS — Wikimedia Commons, CC BY-SA 3.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg/640px-Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg"
+    alt="Gramado Rio Grande do Sul Festival de Cinema"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?w=700&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cinema · RS
+</p>
+
+
+<h3 class="card-title">
+
+Festival de Cinema de Gramado prepara nova edição
+
+</h3>
+
+
+<p class="card-desc">
+
+Evento tradicional valoriza produções brasileiras e novos talentos.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura Sul
+</p>
+
+
+</div>
+
+
+</div>
+
+</a>
+
+
+<!-- NOTÍCIA 22 (grid-row) — Oktoberfest Blumenau SC -->
+<a href="noticia.html?id=22" class="card-link">
+
+<div class="card md">
+
+
+<div class="card-img" style="height:120px">
+  <!-- Oktoberfest Blumenau — Wikimedia Commons, CC BY 2.0, Diegoodorizzi -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg/640px-Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg"
+    alt="Oktoberfest Blumenau Santa Catarina tradição alemã"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1567521464027-f127ff144326?w=700&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Gastronomia · SC
+</p>
+
+
+<h3 class="card-title">
+
+Oktoberfest Blumenau reforça tradição alemã em Santa Catarina
+
+</h3>
+
+
+<p class="card-desc">
+
+Uma das maiores celebrações culturais do estado mantém viva a tradição alemã.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura SC
+</p>
+
+
+</div>
+
+
+</div>
+
+</a>
+
+
+
+<!-- NOTÍCIA 34 — Bienal de Curitiba literatura PR -->
+<a href="noticia.html?id=34" class="card-link">
+
+<div class="card md">
+
+
+<div class="card-img" style="height:120px">
+  <!-- Livros / literatura — Unsplash (Unseen Studio, livre) -->
+  <img
+    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=700&q=80"
+    alt="Bienal do Livro Curitiba literatura escritores brasileiros"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bookshelf_in_library.jpg/640px-Bookshelf_in_library.jpg';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Literatura · PR
+</p>
+
+
+<h3 class="card-title">
+
+Bienal de Curitiba amplia espaço para escritores brasileiros
+
+</h3>
+
+
+<p class="card-desc">
+
+Evento reúne autores, leitores e projetos de incentivo à leitura.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura PR
+</p>
+
+
+</div>
+
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════════
+     PANE: PARANÁ
+     ═══════════════════════════════════════════════ -->
+
+<div data-pane="pr" style="display:none">
+
+
+<p class="sec-label">
+Paraná
+</p>
+
+
+
+<div class="grid-main">
+
+
+<!-- NOTÍCIA 6 PR — Centre Pompidou Foz (destaque) -->
+<a href="noticia.html?id=6" class="card-link">
+
+<div class="card feat">
+
+
+<div class="card-img" style="height:220px">
+  <!-- Cataratas do Iguaçu / Foz — Wikimedia Commons, CC BY-SA 2.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Iguassu_falls_argentina_side.jpg/1280px-Iguassu_falls_argentina_side.jpg"
+    alt="Foz do Iguaçu futuro Centre Pompidou América Latina"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · PR
+</p>
+
+
+<h2 class="card-title">
+
+Centre Pompidou de Foz do Iguaçu inicia nova fase cultural
+
+</h2>
+
+
+<p class="card-desc">
+
+Novo museu promete transformar o cenário artístico do Paraná.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura PR
+</p>
+
+
+</div>
+
+
+</div>
+
+</a>
+
+
+<div class="grid-side">
+
+
+<!-- NOTÍCIA 34 PR (side) — Bienal Curitiba -->
+<a href="noticia.html?id=34" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Livros literatura — Unsplash (Susan Yin, livre) -->
+  <img
+    src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80"
+    alt="Bienal do Livro Curitiba escritores nacionais"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80';"
+  />
+</div>
+
+<div class="card-body">
+
+<p class="card-tag tag-cul">
+Literatura · PR
+</p>
+
+
+<h3 class="card-title">
+
+Bienal de Curitiba reúne escritores nacionais
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+
+
+<!-- NOTÍCIA 30 PR (side) — Eventos culturais Curitiba -->
+<a href="noticia.html?id=30" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Ópera de Arame Curitiba — Wikimedia Commons, CC BY-SA 3.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Opera_de_Arame_Curitiba.jpg/640px-Opera_de_Arame_Curitiba.jpg"
+    alt="Teatro Ópera de Arame eventos culturais Curitiba Paraná"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+<p class="card-tag tag-cul">
+Arte · PR
+</p>
+
+
+<h3 class="card-title">
+
+Eventos culturais movimentam Curitiba
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════════
+     PANE: SANTA CATARINA
+     ═══════════════════════════════════════════════ -->
+
+<div data-pane="sc" style="display:none">
+
+
+<p class="sec-label">
+Santa Catarina
+</p>
+
+
+
+<div class="grid-main">
+
+
+<!-- NOTÍCIA 22 SC — Festa do Pinhão (destaque) -->
+<a href="noticia.html?id=22" class="card-link">
+
+<div class="card feat">
+
+
+<div class="card-img" style="height:220px">
+  <!-- Araucária / pinhão Lages SC — Wikimedia Commons, CC BY-SA 3.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Araucaria_angustifolia_in_Curitiba.jpg/800px-Araucaria_angustifolia_in_Curitiba.jpg"
+    alt="Festa do Pinhão Lages Santa Catarina tradição"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · SC
+</p>
+
+
+<h2 class="card-title">
+
+Festa do Pinhão celebra tradição catarinense
+
+</h2>
+
+
+<p class="card-desc">
+
+Evento reúne gastronomia, música e cultura regional.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura SC
+</p>
+
+
+</div>
+
+
+</div>
+
+</a>
+
+
+<div class="grid-side">
+
+<!-- NOTÍCIA 25 SC (side) — Tradições alemãs SC -->
+<a href="noticia.html?id=25" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Oktoberfest Blumenau — Wikimedia Commons, CC BY 2.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg/640px-Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg"
+    alt="Tradições alemãs Oktoberfest Blumenau Santa Catarina"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+<p class="card-tag tag-cul">
+Cultura · SC
+</p>
+
+
+<h3 class="card-title">
+
+Tradições alemãs seguem fortes em SC
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+
+<!-- NOTÍCIA 26 SC (side) — Festivais regionais SC -->
+<a href="noticia.html?id=26" class="card-link">
+
+<div class="card sm">
+
+<div class="card-img" style="height:90px">
+  <!-- Festival / música ao ar livre — Unsplash (Anthony DELANOIX, livre) -->
+  <img
+    src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80"
+    alt="Festivais regionais Santa Catarina música cultura"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1501386761578-eaa54b16fead?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+<p class="card-tag tag-cul">
+Eventos · SC
+</p>
+
+
+<h3 class="card-title">
+
+Festivais regionais movimentam cidades
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+
+</div>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- ═══════════════════════════════════════════════
+     PANE: RIO GRANDE DO SUL
+     ═══════════════════════════════════════════════ -->
+
+<div data-pane="rs" style="display:none">
+
+
+<p class="sec-label">
+Rio Grande do Sul
+</p>
+
+
+<div class="grid-main">
+
+
+<!-- NOTÍCIA 23 RS — Festival Cultura Gaúcha (destaque) -->
+<a href="noticia.html?id=23" class="card-link">
+
+
+<div class="card feat">
+
+
+<div class="card-img" style="height:220px">
+  <!-- Tradição gaúcha / dança — Wikimedia Commons, CC BY-SA 4.0, Fred Rodrigues -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rodeio_RS.jpg/1280px-Rodeio_RS.jpg"
+    alt="Festival da Cultura Gaúcha dança tradição Rio Grande do Sul"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cultura · RS
+</p>
+
+
+<h2 class="card-title">
+
+Festival da Cultura Gaúcha reúne grupos do estado
+
+</h2>
+
+
+<p class="card-desc">
+
+Música, dança e tradição gaúcha são destaque em eventos regionais.
+
+</p>
+
+
+<p class="card-time">
+2026 · Cultura RS
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</a>
+
+
+<div class="grid-side">
+
+
+<!-- NOTÍCIA 29 RS (side) — Festival Cinema Gramado -->
+<a href="noticia.html?id=29" class="card-link">
+
+<div class="card sm">
+
+
+<div class="card-img" style="height:90px">
+  <!-- Gramado RS — Wikimedia Commons, CC BY-SA 3.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg/640px-Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg"
+    alt="Gramado Rio Grande do Sul Festival de Cinema"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Cinema · RS
+</p>
+
+
+<h3 class="card-title">
+
+Festival de Cinema de Gramado
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</a>
+
+
+
+<!-- NOTÍCIA 31 RS (side) — Cultura gaúcha novos espaços -->
+<a href="noticia.html?id=31" class="card-link">
+
+
+<div class="card sm">
+
+
+<div class="card-img" style="height:90px">
+  <!-- Chimarrão / cultura gaúcha — Wikimedia Commons, CC BY-SA 2.0 -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chimarrao.jpg/640px-Chimarrao.jpg"
+    alt="Chimarrão cultura gaúcha novos espaços Rio Grande do Sul"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=600&q=80';"
+  />
+</div>
+
+
+<div class="card-body">
+
+
+<p class="card-tag tag-cul">
+Tradição · RS
+</p>
+
+
+<h3 class="card-title">
+
+Cultura gaúcha ganha novos espaços
+
+</h3>
+
+
+<p class="card-time">
+2026
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<footer>
+
+<strong>Sul</strong> — Jornalismo regional do sul brasileiro &nbsp;·&nbsp; © 2026
+
+</footer>
+
+
+
+<div class="modal-veil" id="modal-veil">
+
+<div class="modal-card">
+
+<button class="modal-x" id="modal-x">✕</button>
+
+<h2>Bem-vindo ao Sul</h2>
+
+<p>Acesse sua conta ou crie uma gratuitamente.</p>
+
+
+<div class="modal-tabs">
+
+<div class="m-tab on" data-t="login">
+Entrar
+</div>
+
+<div class="m-tab" data-t="reg">
+Criar conta
+</div>
+
+</div>
+
+
+<div id="pane-login">
+
+<input class="m-input" type="email" placeholder="E-mail"/>
+
+<input class="m-input" type="password" placeholder="Senha"/>
+
+<button class="m-submit">
+Entrar
+</button>
+
+</div>
+
+
+<div id="pane-reg" style="display:none">
+
+<input class="m-input" type="text" placeholder="Nome completo"/>
+
+<input class="m-input" type="email" placeholder="E-mail"/>
+
+<input class="m-input" type="password" placeholder="Crie uma senha"/>
+
+<button class="m-submit">
+Criar conta
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script src="js/sul.js"></script>
+
+<script src="js/state-selector.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Política — Sul</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/politica.css"/>
+<style>
+.card-img {
+  overflow: hidden;
+  background: #d0dce8;
+  position: relative;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity .3s;
+}
+.card-img img[data-src] { opacity: 0; }
+.card-img img.loaded { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="bg-stripes" aria-hidden="true"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="topbar-date" id="js-date"></span>
+    <div class="topbar-dolar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3"/><path d="M16 6l-1-3H9L8 6"/></svg>
+      <span class="coin-label" id="coin-label">Dólar:</span>
+      <span class="coin-val" id="coin-val" style="transition:opacity .2s">R$ —</span>
+      <span class="coin-chg" id="coin-chg"></span>
+    </div>
+  </div>
+  <div class="topbar-weather" id="js-wx"></div>
+</div>
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="politica.html" class="active">Política</a></li>
+    <li><a href="economia.html">Economia</a></li>
+    <li><a href="cultura.html">Cultura</a></li>
+    <li><a href="tirinhas.html">Tirinhas</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="ico-btn" id="btn-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+    <button class="ico-btn" id="btn-login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+  </div>
+</nav>
+<div class="search-veil" id="search-veil"><div class="search-card"><input id="search-in" type="text" placeholder="Buscar em Política..." autocomplete="off"/><p>Enter para buscar · Esc para fechar</p></div></div>
+
+<div class="content">
+  <div class="page-hero">
+    <h1>Escolha um dos<br>nossos estados</h1>
+    <p>Venha conhecer a política dos nossos estados</p>
+  </div>
+
+  <div class="state-selector" id="state-selector">
+    <div class="state-pill" id="state-pill"></div>
+    <button class="state-btn active" data-state="todos">Todos os estados</button>
+    <button class="state-btn" data-state="pr">Paraná (PR)</button>
+    <button class="state-btn" data-state="sc">Santa Catarina (SC)</button>
+    <button class="state-btn" data-state="rs">Rio Grande do Sul (RS)</button>
+  </div>
+
+  <div class="news-content" id="news-content">
+
+    <!-- TODOS -->
+    <div data-pane="todos">
+      <p class="sec-label">Todas as notícias políticas</p>
+      <div class="grid-main">
+        <a href="noticia.html?id=13" class="card-link">
+        <div class="card feat">
+          <div class="card-img" style="height:220px">
+            <img data-wiki="Iguazu_Falls" data-src="" alt="Cataratas do Iguaçu — Foz do Iguaçu, PR"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · Sul</p>
+            <h2 class="card-title">Secretários de Segurança do Sul debatem combate ao crime organizado em Foz do Iguaçu</h2>
+            <p class="card-desc">A 6ª edição do SulMaSSP reuniu PR, SC, RS, SP e MS para fortalecer a integração no combate ao tráfico de drogas e armas nas fronteiras. Pautas incluíram uso de IA e propostas de aperfeiçoamento da legislação federal.</p>
+            <p class="card-time">22 de junho de 2026 · O Paraná</p>
+          </div>
+        </div>
+        </a>
+        <div class="grid-side">
+          <a href="noticia.html?id=14" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Palácio_Iguaçu" data-src="" alt="Palácio Iguaçu — governo do Paraná"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · PR</p>
+              <h3 class="card-title">Sandro Alex lidera em Ponta Grossa; Moro aparece empatado em pesquisa para governador</h3>
+              <p class="card-time">22 de junho de 2026</p>
+            </div>
+          </div>
+          </a>
+          <a href="noticia.html?id=15" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Florianópolis" data-src="" alt="Florianópolis — Santa Catarina"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · SC</p>
+              <h3 class="card-title">Jorginho Mello lidera com 37 pontos de vantagem na corrida ao governo de SC</h3>
+              <p class="card-time">11 de junho de 2026</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="grid-row">
+        <a href="noticia.html?id=17" class="card-link">
+        <div class="card md">
+          <div class="card-img" style="height:120px">
+            <img data-wiki="Curitiba" data-src="" alt="Curitiba — sede da ALEP"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · PR</p>
+            <h3 class="card-title">ALEP aprova Programa Universidade Parceira em reunião extraordinária</h3>
+            <p class="card-desc">CCJ aprova projeto que formaliza parcerias entre o estado e instituições de ensino superior.</p>
+            <p class="card-time">22 de junho de 2026</p>
+          </div>
+        </div>
+        </a>
+        <a href="noticia.html?id=18" class="card-link">
+        <div class="card md">
+          <div class="card-img" style="height:120px">
+            <img data-wiki="Cascavel,_Paraná" data-src="" alt="Cascavel — Paraná"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · PR</p>
+            <h3 class="card-title">Cascavel aprova regulamentação de patinetes e bikes elétricas nas vias</h3>
+            <p class="card-desc">PL 55/2026 foi aprovado por unanimidade pela Câmara de Cascavel em primeiro turno.</p>
+            <p class="card-time">22 de junho de 2026</p>
+          </div>
+        </div>
+        </a>
+        <a href="noticia.html?id=16" class="card-link">
+        <div class="card md">
+          <div class="card-img" style="height:120px">
+            <img data-wiki="Porto_Alegre" data-src="" alt="Porto Alegre — Rio Grande do Sul"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · RS</p>
+            <h3 class="card-title">El Niño reacende debate sobre políticas de proteção civil no Rio Grande do Sul</h3>
+            <p class="card-desc">Pesquisadores pedem criação de Núcleos Comunitários de Defesa Civil e investimentos de curto prazo para mitigar riscos.</p>
+            <p class="card-time">19 de junho de 2026</p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- PARANÁ -->
+    <div data-pane="pr" style="display:none">
+      <p class="sec-label">Paraná</p>
+      <div class="grid-main">
+        <a href="noticia.html?id=14" class="card-link">
+        <div class="card feat">
+          <div class="card-img" style="height:220px">
+            <img data-wiki="Paraná_(state)" data-src="" alt="Paraná — eleições governador 2026"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · PR</p>
+            <h2 class="card-title">Disputa acirrada: Sandro Alex e Sergio Moro empatam nas intenções de voto para governador</h2>
+            <p class="card-desc">Pesquisa Radar Inteligência em Ponta Grossa mostra Sandro Alex com 33,4% e Moro com 32,6%. Sandro Alex lidera dois cenários de segundo turno e tem menor rejeição. Moro amplia equipe jurídica para a pré-campanha.</p>
+            <p class="card-time">22 de junho de 2026 · O Paraná</p>
+          </div>
+        </div>
+        </a>
+        <div class="grid-side">
+          <a href="noticia.html?id=17" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Curitiba" data-src="" alt="Curitiba — ALEP"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · PR</p>
+              <h3 class="card-title">ALEP aprova em caráter extraordinário o Programa Universidade Parceira</h3>
+              <p class="card-time">22 de junho de 2026</p>
+            </div>
+          </div>
+          </a>
+          <a href="noticia.html?id=19" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Iguazu_Falls" data-src="" alt="Paraná"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · PR</p>
+              <h3 class="card-title">Casa Fácil Paraná entrega R$ 12,5 mi em subsídios para 576 famílias</h3>
+              <p class="card-time">Junho de 2026</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SC -->
+    <div data-pane="sc" style="display:none">
+      <p class="sec-label">Santa Catarina</p>
+      <div class="grid-main">
+        <a href="noticia.html?id=15" class="card-link">
+        <div class="card feat">
+          <div class="card-img" style="height:220px">
+            <img data-wiki="Florianópolis" data-src="" alt="Florianópolis — Santa Catarina"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Política · SC</p>
+            <h2 class="card-title">Jorginho Mello lidera corrida ao governo de SC com 37 pontos de vantagem sobre João Rodrigues</h2>
+            <p class="card-desc">Pesquisa do Futura Inteligência/Apex Partners mostra o atual governador em primeiro no cenário estimulado e vencendo em dois simulações de segundo turno. Gelson Merisio é o candidato com maior rejeição no estado.</p>
+            <p class="card-time">11 de junho de 2026 · Gazeta do Povo</p>
+          </div>
+        </div>
+        </a>
+        <div class="grid-side">
+          <a href="noticia.html?id=20" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Santa_Catarina_(state)" data-src="" alt="Santa Catarina"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · SC</p>
+              <h3 class="card-title">Assembleia de SC aprova atualização do piso mínimo regional em 2026</h3>
+              <p class="card-time">Março de 2026 · FIESC</p>
+            </div>
+          </div>
+          </a>
+          <a href="noticia.html?id=13" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Iguazu_Falls" data-src="" alt="Foz do Iguaçu — SulMaSSP"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Segurança · SC</p>
+              <h3 class="card-title">SC participa de encontro regional de Segurança Pública em Foz do Iguaçu</h3>
+              <p class="card-time">22 de junho de 2026</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RS -->
+    <div data-pane="rs" style="display:none">
+      <p class="sec-label">Rio Grande do Sul</p>
+      <div class="grid-main">
+        <a href="noticia.html?id=16" class="card-link">
+        <div class="card feat">
+          <div class="card-img" style="height:220px">
+            <img data-wiki="Porto_Alegre" data-src="" alt="Porto Alegre — Rio Grande do Sul"/>
+          </div>
+          <div class="card-body">
+            <p class="card-tag tag-pol">Meio Ambiente · RS</p>
+            <h2 class="card-title">El Niño confirmado reacende debate político sobre prevenção de desastres no RS</h2>
+            <p class="card-desc">Com 63% de chance de El Niño muito forte até o início de 2027, pesquisadores e parlamentares gaúchos debatem criação de núcleos de defesa civil e investimentos emergenciais nas áreas mais vulneráveis do estado.</p>
+            <p class="card-time">19 de junho de 2026 · Brasil de Fato</p>
+          </div>
+        </div>
+        </a>
+        <div class="grid-side">
+          <a href="noticia.html?id=21" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Rio_Grande_do_Sul" data-src="" alt="Rio Grande do Sul"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Política · RS</p>
+              <h3 class="card-title">RS atualiza piso salarial regional com Lei 16.514/2026</h3>
+              <p class="card-time">21 de maio de 2026 · Casa Civil RS</p>
+            </div>
+          </div>
+          </a>
+          <a href="noticia.html?id=13" class="card-link">
+          <div class="card sm">
+            <div class="card-img" style="height:90px">
+              <img data-wiki="Iguazu_Falls" data-src="" alt="Foz do Iguaçu — SulMaSSP"/>
+            </div>
+            <div class="card-body">
+              <p class="card-tag tag-pol">Segurança · RS</p>
+              <h3 class="card-title">RS participa de encontro regional de Segurança Pública e debate combate ao crime organizado</h3>
+              <p class="card-time">22 de junho de 2026</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /news-content -->
+</div>
+
+<footer><strong>Sul</strong> &mdash; Jornalismo regional do sul brasileiro &nbsp;·&nbsp; © 2026</footer>
+
+<div class="modal-veil" id="modal-veil"><div class="modal-card"><button class="modal-x" id="modal-x">✕</button><h2>Bem-vindo ao Sul</h2><p>Acesse sua conta ou crie uma gratuitamente.</p><div class="modal-tabs"><div class="m-tab on" data-t="login">Entrar</div><div class="m-tab" data-t="reg">Criar conta</div></div><div id="pane-login"><input class="m-input" type="email" placeholder="E-mail"/><input class="m-input" type="password" placeholder="Senha"/><button class="m-submit">Entrar</button></div><div id="pane-reg" style="display:none"><input class="m-input" type="text" placeholder="Nome completo"/><input class="m-input" type="email" placeholder="E-mail"/><input class="m-input" type="password" placeholder="Crie uma senha"/><button class="m-submit">Criar conta</button></div></div></div>
+
+<script src="js/sul.js"></script>
+<script src="js/state-selector.js"></script>
+
+<!-- Carrega imagens via Wikipedia REST API diretamente no browser -->
+<script>
+(function () {
+  const imgs = document.querySelectorAll('img[data-wiki]');
+  const cache = {};
+
+  async function loadWikiThumb(article, imgEl) {
+    if (cache[article]) {
+      setImg(imgEl, cache[article]);
+      return;
+    }
+    try {
+      const url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(article);
+      const r = await fetch(url);
+      if (!r.ok) return;
+      const d = await r.json();
+      const src = d.thumbnail && d.thumbnail.source;
+      if (src) {
+        cache[article] = src;
+        setImg(imgEl, src);
+      }
+    } catch (e) {
+      // silently fail — card background color stays as placeholder
+    }
+  }
+
+  function setImg(imgEl, src) {
+    imgEl.src = src;
+    imgEl.onload = () => imgEl.classList.add('loaded');
+    imgEl.onerror = () => imgEl.style.display = 'none';
+  }
+
+  imgs.forEach(img => loadWikiThumb(img.dataset.wiki, img));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* tirinhas.css — estilos exclusivos da página Tirinhas */
+
+/* ── HERO ─────────────────────────────────────────── */
+.tir-hero {
+  padding: 56px 24px 40px;
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.tir-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+.tir-hero h1 {
+  font-size: clamp(38px, 5.5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.tir-sub {
+  font-size: 15px;
+  color: var(--text2);
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+/* ── WRAPPER ──────────────────────────────────────── */
+.tir-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── DESTAQUE ─────────────────────────────────────── */
+.tir-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--surface);
+  min-height: 300px;
+  /* sombra interna sutil */
+  box-shadow: 0 2px 24px rgba(0,0,0,.06);
+  transition: transform .22s cubic-bezier(.4,0,.2,1), box-shadow .22s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+}
+.tir-featured:hover {
+  transform: translateY(-3px) scale(1.005);
+  box-shadow: 0 14px 40px rgba(0,0,0,.1);
+}
+.tir-feat-img {
+  background: var(--surface2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.tir-feat-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tir-feat-body {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.tir-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--orange);
+  background: rgba(255,159,10,.1);
+  padding: 4px 10px;
+  border-radius: 100px;
+  width: fit-content;
+}
+.tir-feat-num {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text3);
+  margin-top: 4px;
+}
+.tir-feat-title {
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.2;
+  color: var(--text);
+}
+.tir-feat-date {
+  font-size: 12px;
+  color: var(--text3);
+  margin-top: 4px;
+}
+
+/* ── GRID ─────────────────────────────────────────── */
+.tir-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* ── CARD ─────────────────────────────────────────── */
+.tir-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform .22s cubic-bezier(.4,0,.2,1), box-shadow .22s cubic-bezier(.4,0,.2,1);
+}
+.tir-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+  pointer-events: none;
+}
+.tir-card:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 14px 36px rgba(0,0,0,.09);
+}
+
+/* Imagem do card */
+.tir-img {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface2);
+  font-size: 44px;
+}
+.tir-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Cards sem imagem ainda — fundo com cor sutil */
+.tir-card.tir-empty .tir-img {
+  background: var(--surface2);
+}
+/* Cores alternadas nos cards vazios */
+.tir-card.tir-empty:nth-child(1) .tir-img { background: #fef3c7 }
+.tir-card.tir-empty:nth-child(2) .tir-img { background: #dbeafe }
+.tir-card.tir-empty:nth-child(3) .tir-img { background: #dcfce7 }
+.tir-card.tir-empty:nth-child(4) .tir-img { background: #fce7f3 }
+.tir-card.tir-empty:nth-child(5) .tir-img { background: #ede9fe }
+.tir-card.tir-empty:nth-child(6) .tir-img { background: #fee2e2 }
+
+/* Caption */
+.tir-caption {
+  padding: 14px 16px 16px;
+  border-top: 1px solid rgba(0,0,0,.05);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.tir-num {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--red);
+}
+.tir-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+}
+.tir-date {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+/* ── DICA DE COMO ADICIONAR IMAGEM ───────────────── */
+/* Para adicionar imagem real: substitua o emoji dentro de .tir-img por:
+   <img src="img/tirinhaN.png" alt="Tirinha #N"/> */
+
+/* ── RESPONSIVO ───────────────────────────────────── */
+@media (max-width: 860px) {
+  .tir-featured { grid-template-columns: 1fr }
+  .tir-feat-img { min-height: 220px; aspect-ratio: 16/9 }
+  .tir-feat-body { padding: 24px 20px }
+  .tir-grid { grid-template-columns: repeat(2, 1fr) }
+}
+@media (max-width: 500px) {
+  .tir-grid { grid-template-columns: 1fr }
+  .tir-hero { padding: 40px 16px 28px }
+  .tir-wrap { padding: 0 16px 60px }
+}

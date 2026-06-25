@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sul — Jornalismo do Sul Brasileiro</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+
+<div class="bg-stripes" aria-hidden="true">
+  <span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span>
+</div>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="topbar-date" id="js-date"></span>
+    <div class="topbar-coins">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3"/><path d="M16 6l-1-3H9L8 6"/></svg>
+      <span class="coin-item"><span class="coin-label" id="coin-label">Dólar:</span><span class="coin-val" id="coin-val">R$ —</span><span class="coin-chg" id="coin-chg"></span></span>
+    </div>
+  </div>
+  <div class="topbar-weather" id="js-wx"></div>
+</div>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="politica.html">Política</a></li>
+    <li><a href="economia.html">Economia</a></li>
+    <li><a href="cultura.html">Cultura</a></li>
+    <li><a href="tirinhas.html">Tirinhas</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="ico-btn" id="btn-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+    <button class="ico-btn" id="btn-login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+  </div>
+</nav>
+
+<div class="search-veil" id="search-veil">
+  <div class="search-card">
+    <input id="search-in" type="text" placeholder="O que você procura?" autocomplete="off"/>
+    <p>Enter para buscar · Esc para fechar</p>
+  </div>
+</div>
+
+<section class="hero">
+  <h1>Conheça o mundo<br>do sul brasileiro</h1>
+  <button class="hero-cta" onclick="document.getElementById('news').scrollIntoView({behavior:'smooth'})">Experimente</button>
+</section>
+
+<div class="content" id="news">
+  <p class="sec-label">Destaques desta semana</p>
+
+  <!-- GRID PRINCIPAL -->
+  <div class="grid-main">
+
+    <!-- NOTÍCIA 1 — El Niño / Enchente RS -->
+    <!-- Foto: Gustavo Mansur / Governo do RS — licença Creative Commons, Flickr oficial -->
+    <a href="noticia.html?id=1" class="card-link">
+    <div class="card feat">
+      <div class="card-img" style="height:220px">
+        <img
+          src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=800&q=80&fit=crop"
+          alt="Sobrevoo enchente Canoas RS maio 2024"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.style.fontSize='40px';this.parentElement.innerHTML='🌩️'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-pol">Meio Ambiente · RS</p>
+        <h2 class="card-title">El Niño confirmado: Sul do Brasil enfrenta risco elevado de temporais até 2027</h2>
+        <p class="card-desc">A MetSul confirma 63% de probabilidade de El Niño muito forte. RS, SC e PR devem registrar chuvas acima da média na primavera e verão, com risco de enchentes, deslizamentos e tornados isolados.</p>
+        <p class="card-time">24 de junho de 2026 · Brasil de Fato</p>
+      </div>
+    </div>
+    </a>
+
+    <div class="grid-side">
+
+      <!-- NOTÍCIA 2 — Política PR (eleições) -->
+      <!-- Foto: Unsplash — sessão plenária, licença livre -->
+      <a href="noticia.html?id=2" class="card-link">
+      <div class="card sm">
+        <div class="card-img" style="height:88px">
+          <img
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=80&fit=crop"
+            alt="Eleições Paraná governador 2026"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='🗳️'"
+          />
+        </div>
+        <div class="card-body">
+          <p class="card-tag tag-pol">Política · PR</p>
+          <h3 class="card-title">Moro e Sandro Alex empatam em pesquisa para governador do Paraná</h3>
+          <p class="card-time">22 de junho de 2026 · O Paraná</p>
+        </div>
+      </div>
+      </a>
+
+      <!-- NOTÍCIA 4 — Política SC -->
+      <!-- Foto: Unsplash — votação urna, licença livre -->
+      <a href="noticia.html?id=4" class="card-link">
+      <div class="card sm">
+        <div class="card-img" style="height:88px">
+          <img
+            src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400&q=80&fit=crop"
+            alt="Eleição governador Santa Catarina 2026"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='📊'"
+          />
+        </div>
+        <div class="card-body">
+          <p class="card-tag tag-pol">Política · SC</p>
+          <h3 class="card-title">Jorginho Mello lidera corrida ao governo de SC com mais de 37 pontos</h3>
+          <p class="card-time">11 de junho de 2026 · Gazeta do Povo</p>
+        </div>
+      </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- LINHA 1 -->
+  <div class="grid-row">
+
+    <!-- NOTÍCIA 5 — Piso salarial PR -->
+    <!-- Foto: Unsplash — dinheiro/salário, licença livre -->
+    <a href="noticia.html?id=5" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&fit=crop"
+          alt="Piso salarial Paraná 2026"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='💰'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-eco">Economia · PR</p>
+        <h3 class="card-title">Paraná tem maior piso salarial do Brasil — até R$ 2.407 em 2026</h3>
+        <p class="card-desc">Decreto 13.182/2026 eleva piso regional em quatro faixas, de R$ 2.105 a R$ 2.407.</p>
+        <p class="card-time">Junho de 2026</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 3 — Safra soja RS -->
+    <!-- Foto: Unsplash — campo agrícola soja, licença livre -->
+    <a href="noticia.html?id=3" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80&fit=crop"
+          alt="Safra soja Rio Grande do Sul 2026"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🌾'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-eco">Economia · RS</p>
+        <h3 class="card-title">PIB gaúcho deve crescer acima da média nacional em 2026</h3>
+        <p class="card-desc">Recuperação da safra de soja (+55%) e milho (+19%) impulsionam a economia do RS.</p>
+        <p class="card-time">Janeiro de 2026 · DEE-RS</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 6 — Centre Pompidou Foz -->
+    <!-- Foto: Unsplash — museu arte moderno, licença livre -->
+    <a href="noticia.html?id=6" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80&fit=crop"
+          alt="Museu Centre Pompidou Foz do Iguaçu projeto"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🎨'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-cul">Cultura · PR</p>
+        <h3 class="card-title">Centre Pompidou em Foz do Iguaçu: obras iniciam no 2º semestre de 2026</h3>
+        <p class="card-desc">Primeiro museu internacional da América Latina com R$ 250 mi de investimento.</p>
+        <p class="card-time">Abril de 2026 · Gazeta do Povo</p>
+      </div>
+    </div>
+    </a>
+
+  </div>
+
+  <!-- LINHA 2 -->
+  <div class="grid-row">
+
+    <!-- NOTÍCIA 7 — Obras Porto Alegre / proteção enchentes -->
+    <!-- Foto: Wikimedia Commons — enchente RS 2024, licença CC BY 2.0 -->
+    <a href="noticia.html?id=7" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop"
+          alt="Obras proteção enchentes Porto Alegre RS"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🏗️'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-pol">Meio Ambiente · RS</p>
+        <h3 class="card-title">Porto Alegre acelera obras de proteção contra enchentes antes do novo El Niño</h3>
+        <p class="card-desc">Prefeitura e governo estadual ampliam investimentos em diques, comportas e drenagem.</p>
+        <p class="card-time">Junho de 2026 · Reuters</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 8 — Chuvas SC / Defesa Civil -->
+    <!-- Foto: Unsplash — chuva forte temporal, licença livre -->
+    <a href="noticia.html?id=8" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=600&q=80&fit=crop"
+          alt="Temporal chuva forte Santa Catarina"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🌧️'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-pol">Clima · SC</p>
+        <h3 class="card-title">Defesa Civil alerta para aumento das chuvas e temporais em SC no inverno</h3>
+        <p class="card-desc">Modelos climáticos indicam precipitação acima da média e maior frequência de eventos extremos.</p>
+        <p class="card-time">Junho de 2026 · Defesa Civil SC</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 9 — Trigo PR -->
+    <!-- Foto: Unsplash — lavoura trigo campo, licença livre -->
+    <a href="noticia.html?id=9" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80&fit=crop"
+          alt="Plantio trigo Paraná lavoura 2026"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🌾'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-eco">Agronegócio · PR</p>
+        <h3 class="card-title">Plantio de trigo avança no Paraná com clima favorável e expectativa de boa safra</h3>
+        <p class="card-desc">Menor volume de chuva e redução de geadas favorecem o desenvolvimento das lavouras.</p>
+        <p class="card-time">Junho de 2026 · Notícias Agrícolas</p>
+      </div>
+    </div>
+    </a>
+
+  </div>
+
+  <!-- LINHA 3 -->
+  <div class="grid-row">
+
+    <!-- NOTÍCIA 10 — Frio / Geada Serra Catarinense -->
+    <!-- Foto: Unsplash — montanha neve geada, licença livre -->
+    <a href="noticia.html?id=10" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=600&q=80&fit=crop"
+          alt="Geada frio inverno Serra Catarinense 2026"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='❄️'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-pol">Tempo · Sul</p>
+        <h3 class="card-title">Inmet mantém alerta para frio intenso e geadas na Serra Catarinense</h3>
+        <p class="card-desc">Temperaturas podem cair abaixo de -7°C em áreas de maior altitude com nova massa polar.</p>
+        <p class="card-time">Junho de 2026 · Agência Brasil</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 11 — Desafio demográfico RS / cidade -->
+    <!-- Foto: Unsplash — vista aérea cidade, licença livre -->
+    <a href="noticia.html?id=11" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1566837945700-30057527ade0?w=600&q=80&fit=crop"
+          alt="Porto Alegre cidade Rio Grande do Sul vista aérea"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='🏙️'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-eco">Sociedade · RS</p>
+        <h3 class="card-title">Rio Grande do Sul se prepara para desafio demográfico com queda de população</h3>
+        <p class="card-desc">Estado aposta em inovação e atração de talentos para enfrentar a redução prevista.</p>
+        <p class="card-time">Maio de 2026 · Financial Times</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- NOTÍCIA 12 — Futebol SC -->
+    <!-- Foto: Unsplash — estádio futebol noite, licença livre -->
+    <a href="noticia.html?id=12" class="card-link">
+    <div class="card md">
+      <div class="card-img" style="height:118px">
+        <img
+          src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&q=80&fit=crop"
+          alt="Futebol estádio Santa Catarina clubes 2026"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.innerHTML='⚽'"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-tag tag-cul">Esporte · SC</p>
+        <h3 class="card-title">Santa Catarina amplia presença nacional com clubes em novas competições em 2026</h3>
+        <p class="card-desc">Equipes catarinenses ganham espaço em torneios nacionais e fortalecem o futebol regional.</p>
+        <p class="card-time">Junho de 2026</p>
+      </div>
+    </div>
+    </a>
+
+  </div>
+
+  <!-- PODCAST -->
+  <div class="podcast-wrap">
+    <div class="pod-art">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+    </div>
+    <div class="pod-body">
+      <p class="pod-eyebrow">Podcast da semana</p>
+      <h2 class="pod-title">Papo de Sul</h2>
+      <p class="pod-ep" id="pod-ep">O futuro das sociedades inteligentes no sul</p>
+      <div class="pod-controls">
+        <button class="btn-play" id="btn-play">
+          <svg id="ico-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          <svg id="ico-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          <span id="play-lbl">Ouvir agora</span>
+        </button>
+        <span class="pod-time" id="pod-time">0:00 / 0:00</span>
+      </div>
+      <div class="pod-progress" id="pod-bar"><div class="pod-fill" id="pod-fill"></div></div>
+      <label id="upload-zone" class="upload-zone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        <input type="file" id="pod-file" accept="audio/*" style="display:none"/>
+        <span id="pod-fname">Clique para carregar o áudio do episódio</span>
+      </label>
+    </div>
+    <div class="pod-right">
+      <div class="pod-num">#47</div>
+      <div class="pod-ep-title">O futuro das sociedades inteligentes no sul</div>
+      <div class="pod-ep-sub">Spotify · Deezer · Apple Podcasts</div>
+    </div>
+  </div>
+
+</div><!-- /content -->
+
+<footer><strong>Sul</strong> &mdash; Jornalismo regional do sul brasileiro &nbsp;·&nbsp; © 2026</footer>
+
+<div class="modal-veil" id="modal-veil">
+  <div class="modal-card">
+    <button class="modal-x" id="modal-x">✕</button>
+    <h2>Bem-vindo ao Sul</h2>
+    <p>Acesse sua conta ou crie uma gratuitamente.</p>
+    <div class="modal-tabs">
+      <div class="m-tab on" data-t="login">Entrar</div>
+      <div class="m-tab" data-t="reg">Criar conta</div>
+    </div>
+    <div id="pane-login">
+      <input class="m-input" type="email" placeholder="E-mail"/>
+      <input class="m-input" type="password" placeholder="Senha"/>
+      <button class="m-submit">Entrar</button>
+    </div>
+    <div id="pane-reg" style="display:none">
+      <input class="m-input" type="text" placeholder="Nome completo"/>
+      <input class="m-input" type="email" placeholder="E-mail"/>
+      <input class="m-input" type="password" placeholder="Crie uma senha"/>
+      <button class="m-submit">Criar conta</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/sul.js"></script>
+<script src="js/podcast.js"></script>
+</body>
+</html>

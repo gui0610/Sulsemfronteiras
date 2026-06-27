@@ -1,6 +1,3 @@
-/* tirinhas.css — estilos exclusivos da página Tirinhas */
-
-/* ── HERO ─────────────────────────────────────────── */
 .tir-hero {
   padding: 56px 24px 40px;
   position: relative;
@@ -31,7 +28,6 @@
   line-height: 1.5;
 }
 
-/* ── WRAPPER ──────────────────────────────────────── */
 .tir-wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -40,7 +36,6 @@
   z-index: 1;
 }
 
-/* ── DESTAQUE ─────────────────────────────────────── */
 .tir-featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,7 +44,6 @@
   overflow: hidden;
   background: var(--surface);
   min-height: 300px;
-  /* sombra interna sutil */
   box-shadow: 0 2px 24px rgba(0,0,0,.06);
   transition: transform .22s cubic-bezier(.4,0,.2,1), box-shadow .22s cubic-bezier(.4,0,.2,1);
   cursor: pointer;
@@ -113,14 +107,12 @@
   margin-top: 4px;
 }
 
-/* ── GRID ─────────────────────────────────────────── */
 .tir-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
-/* ── CARD ─────────────────────────────────────────── */
 .tir-card {
   border-radius: 18px;
   overflow: hidden;
@@ -144,7 +136,6 @@
   box-shadow: 0 14px 36px rgba(0,0,0,.09);
 }
 
-/* Imagem do card */
 .tir-img {
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -161,11 +152,9 @@
   display: block;
 }
 
-/* Cards sem imagem ainda — fundo com cor sutil */
 .tir-card.tir-empty .tir-img {
   background: var(--surface2);
 }
-/* Cores alternadas nos cards vazios */
 .tir-card.tir-empty:nth-child(1) .tir-img { background: #fef3c7 }
 .tir-card.tir-empty:nth-child(2) .tir-img { background: #dbeafe }
 .tir-card.tir-empty:nth-child(3) .tir-img { background: #dcfce7 }
@@ -173,7 +162,6 @@
 .tir-card.tir-empty:nth-child(5) .tir-img { background: #ede9fe }
 .tir-card.tir-empty:nth-child(6) .tir-img { background: #fee2e2 }
 
-/* Caption */
 .tir-caption {
   padding: 14px 16px 16px;
   border-top: 1px solid rgba(0,0,0,.05);
@@ -202,11 +190,6 @@
   padding-top: 6px;
 }
 
-/* ── DICA DE COMO ADICIONAR IMAGEM ───────────────── */
-/* Para adicionar imagem real: substitua o emoji dentro de .tir-img por:
-   <img src="img/tirinhaN.png" alt="Tirinha #N"/> */
-
-/* ── RESPONSIVO ───────────────────────────────────── */
 @media (max-width: 860px) {
   .tir-featured { grid-template-columns: 1fr }
   .tir-feat-img { min-height: 220px; aspect-ratio: 16/9 }

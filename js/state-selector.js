@@ -1,4 +1,3 @@
-/* state-selector.js — pill deslizante para Política e Cultura */
 const sel=document.getElementById("state-selector");
 const pill=document.getElementById("state-pill");
 const btns=sel?sel.querySelectorAll(".state-btn"):[];

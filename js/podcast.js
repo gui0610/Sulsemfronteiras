@@ -1,5 +1,3 @@
-/* podcast.js — player de áudio da página inicial */
-
 let aud = new Audio("podcast7.mp3");
 
 let playing = false;

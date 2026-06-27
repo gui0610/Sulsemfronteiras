@@ -1,12 +1,9 @@
 const noticias = {
 
-  // ─── MEIO AMBIENTE / CLIMA ────────────────────────────────────────────────
-
   1:{
     tag:"Meio Ambiente · RS",
     title:"El Niño confirmado: Sul do Brasil enfrenta risco elevado de temporais até 2027",
     time:"24 de junho de 2026 · Redação Sul",
-    // Enchente / chuvas Sul do Brasil — Wikimedia Commons, CC BY-SA 4.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Enchente_em_Porto_Alegre_2024.jpg/1280px-Enchente_em_Porto_Alegre_2024.jpg",
     imageFallback:"https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&q=80",
     text:[
@@ -20,7 +17,6 @@ const noticias = {
     tag:"Política · PR",
     title:"Moro e Sandro Alex empatam em pesquisa para governador do Paraná",
     time:"22 de junho de 2026 · O Paraná",
-    // Urna eletrônica / eleições — Wikimedia Commons, CC BY-SA 2.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Urna_eletr%C3%B4nica_brasileira.jpg/640px-Urna_eletr%C3%B4nica_brasileira.jpg",
     imageFallback:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80",
     text:[
@@ -33,7 +29,6 @@ const noticias = {
     tag:"Economia · RS",
     title:"PIB gaúcho deve crescer acima da média nacional em 2026",
     time:"Janeiro de 2026 · Economia Sul",
-    // Soja RS — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PlantacaodeSoja.JPG/1280px-PlantacaodeSoja.JPG",
     imageFallback:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80",
     text:[
@@ -46,7 +41,6 @@ const noticias = {
     tag:"Política · SC",
     title:"Jorginho Mello lidera corrida ao governo de SC com mais de 37 pontos",
     time:"11 de junho de 2026 · Gazeta do Povo",
-    // Assembleia Legislativa SC / eleições — Unsplash (Element5 Digital, livre)
     image:"https://images.unsplash.com/photo-1494172961521-33799ddd43a5?w=900&q=80",
     imageFallback:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Urna_eletr%C3%B4nica_brasileira.jpg/640px-Urna_eletr%C3%B4nica_brasileira.jpg",
     text:[
@@ -60,7 +54,6 @@ const noticias = {
     tag:"Economia · PR",
     title:"Paraná tem maior piso salarial do Brasil — até R$ 2.407 em 2026",
     time:"Junho de 2026",
-    // Trabalhadores / salário — Unsplash (Scott Graham, livre)
     image:"https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
     text:[
@@ -74,7 +67,6 @@ const noticias = {
     tag:"Cultura · PR",
     title:"Centre Pompidou em Foz do Iguaçu: obras iniciam no 2º semestre de 2026",
     time:"Abril de 2026 · Gazeta do Povo",
-    // Cataratas do Iguaçu / Foz — Wikimedia Commons, CC BY-SA 2.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Iguassu_falls_argentina_side.jpg/1280px-Iguassu_falls_argentina_side.jpg",
     imageFallback:"https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900&q=80",
     text:[
@@ -88,7 +80,6 @@ const noticias = {
     tag:"Meio Ambiente · RS",
     title:"Porto Alegre acelera obras de proteção contra enchentes antes de novo ciclo do El Niño",
     time:"Junho de 2026 · Reuters",
-    // Dique / obras Porto Alegre — Wikimedia Commons, CC BY-SA 4.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Porto_Alegre_Orla_do_Guaiba.jpg/1280px-Porto_Alegre_Orla_do_Guaiba.jpg",
     imageFallback:"https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&q=80",
     text:[
@@ -102,7 +93,6 @@ const noticias = {
     tag:"Clima · SC",
     title:"Defesa Civil alerta para aumento das chuvas e temporais em Santa Catarina durante o inverno",
     time:"Junho de 2026 · Defesa Civil SC",
-    // Chuva / temporal — Unsplash (Max Letek, livre)
     image:"https://images.unsplash.com/photo-1428592953211-077101b2021b?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&q=80",
     text:[
@@ -116,7 +106,6 @@ const noticias = {
     tag:"Agronegócio · PR",
     title:"Plantio de trigo avança no Paraná com clima favorável e expectativa de boa safra",
     time:"Junho de 2026 · Notícias Agrícolas",
-    // Campo de trigo — Wikimedia Commons, domínio público (USDA)
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg",
     imageFallback:"https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=900&q=80",
     text:[
@@ -130,7 +119,6 @@ const noticias = {
     tag:"Tempo · Sul",
     title:"Inmet mantém alerta para frio intenso e possibilidade de geadas na Serra Catarinense",
     time:"Junho de 2026 · Agência Brasil",
-    // Serra Catarinense / frio inverno — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Urubici-SC.jpg/1280px-Urubici-SC.jpg",
     imageFallback:"https://images.unsplash.com/photo-1517002099923-a1adb3c56d80?w=900&q=80",
     text:[
@@ -144,7 +132,6 @@ const noticias = {
     tag:"Sociedade · RS",
     title:"Rio Grande do Sul se prepara para desafio demográfico com redução da população a partir de 2027",
     time:"Maio de 2026 · Financial Times",
-    // Envelhecimento / população — Unsplash (Cristina Gottardi, livre)
     image:"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=80",
     text:[
@@ -158,7 +145,6 @@ const noticias = {
     tag:"Esporte · SC",
     title:"Santa Catarina amplia presença nacional com clubes disputando novas competições em 2026",
     time:"Junho de 2026",
-    // Futebol / estádio — Wikimedia Commons, CC BY-SA 3.0, Heriberto Hülse
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Est%C3%A1dio_Heriberto_H%C3%BClse.jpg/1280px-Est%C3%A1dio_Heriberto_H%C3%BClse.jpg",
     imageFallback:"https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=900&q=80",
     text:[
@@ -168,13 +154,10 @@ const noticias = {
     ]
   },
 
-  // ─── POLÍTICA ────────────────────────────────────────────────────────────
-
   13:{
     tag:"Segurança · Sul",
     title:"Secretários de Segurança do Sul debatem combate ao crime organizado em Foz do Iguaçu",
     time:"22 de junho de 2026 · O Paraná",
-    // Ponte da Amizade / fronteira Foz do Iguaçu — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ponte_da_Amizade_Foz_do_Iguacu.jpg/1280px-Ponte_da_Amizade_Foz_do_Iguacu.jpg",
     imageFallback:"https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80",
     text:[
@@ -188,7 +171,6 @@ const noticias = {
     tag:"Política · PR",
     title:"Disputa acirrada: Sandro Alex e Sergio Moro empatam nas intenções de voto para governador",
     time:"22 de junho de 2026 · O Paraná",
-    // Eleições / pesquisa — Unsplash (Element5 Digital, livre)
     image:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80",
     imageFallback:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Urna_eletr%C3%B4nica_brasileira.jpg/640px-Urna_eletr%C3%B4nica_brasileira.jpg",
     text:[
@@ -202,7 +184,6 @@ const noticias = {
     tag:"Política · SC",
     title:"Jorginho Mello lidera corrida ao governo de SC com 37 pontos de vantagem sobre João Rodrigues",
     time:"11 de junho de 2026 · Gazeta do Povo",
-    // Votação / eleições — Unsplash (Element5 Digital, livre)
     image:"https://images.unsplash.com/photo-1494172961521-33799ddd43a5?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80",
     text:[
@@ -216,7 +197,6 @@ const noticias = {
     tag:"Meio Ambiente · RS",
     title:"El Niño confirmado reacende debate político sobre prevenção de desastres no RS",
     time:"19 de junho de 2026 · Brasil de Fato",
-    // Debate / parlamento RS — Wikimedia Commons, CC BY 2.0 (Agência Senado)
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Enchente_em_Porto_Alegre_%282024%29.jpg/1280px-Enchente_em_Porto_Alegre_%282024%29.jpg",
     imageFallback:"https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&q=80",
     text:[
@@ -230,7 +210,6 @@ const noticias = {
     tag:"Política · PR",
     title:"ALEP aprova Programa Universidade Parceira em reunião extraordinária",
     time:"22 de junho de 2026",
-    // Plenário / assembleia legislativa — Unsplash (Louis Velazquez, livre)
     image:"https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900&q=80",
     text:[
@@ -244,7 +223,6 @@ const noticias = {
     tag:"Política · PR",
     title:"Cascavel aprova regulamentação de patinetes e bikes elétricas nas vias",
     time:"22 de junho de 2026",
-    // Patinete elétrico / mobilidade urbana — Unsplash (Viktor Forgacs, livre)
     image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=900&q=80",
     text:[
@@ -258,7 +236,6 @@ const noticias = {
     tag:"Política · PR",
     title:"Casa Fácil Paraná entrega R$ 12,5 mi em subsídios para 576 famílias",
     time:"Junho de 2026",
-    // Habitação / casas — Unsplash (Breno Assis, livre)
     image:"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1448630360428-65456885c650?w=900&q=80",
     text:[
@@ -272,7 +249,6 @@ const noticias = {
     tag:"Política · SC",
     title:"Assembleia de SC aprova atualização do piso mínimo regional em 2026",
     time:"Março de 2026 · FIESC",
-    // Assembleia SC / trabalhadores — Unsplash (Scott Graham, livre)
     image:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=80",
     text:[
@@ -286,7 +262,6 @@ const noticias = {
     tag:"Política · RS",
     title:"RS atualiza piso salarial regional com Lei 16.514/2026",
     time:"21 de maio de 2026 · Casa Civil RS",
-    // Trabalhadores RS — Unsplash (Headway, livre)
     image:"https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80",
     text:[
@@ -296,13 +271,10 @@ const noticias = {
     ]
   },
 
-  // ─── CULTURA ─────────────────────────────────────────────────────────────
-
   22:{
     tag:"Cultura · SC",
     title:"Festival de Dança de Joinville 2026 prepara nova edição internacional",
     time:"Junho de 2026 · Cultura SC",
-    // Ballet / dança — Unsplash (Ahmad Odeh, livre)
     image:"https://images.unsplash.com/photo-1547153760-18fc86324498?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80",
     text:[
@@ -316,7 +288,6 @@ const noticias = {
     tag:"Cultura · RS",
     title:"Tradição gaúcha ganha novas iniciativas culturais no Rio Grande do Sul",
     time:"Junho de 2026 · Cultura RS",
-    // Tradição gaúcha / rodeio — Wikimedia Commons, CC BY-SA 4.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rodeio_RS.jpg/1280px-Rodeio_RS.jpg",
     imageFallback:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80",
     text:[
@@ -330,7 +301,6 @@ const noticias = {
     tag:"Cultura · PR",
     title:"Foz do Iguaçu amplia calendário cultural com novos eventos em 2026",
     time:"Junho de 2026 · Secretaria da Cultura PR",
-    // Cataratas / Foz cultura — Wikimedia Commons, CC BY-SA 2.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Iguassu_falls_argentina_side.jpg/1280px-Iguassu_falls_argentina_side.jpg",
     imageFallback:"https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900&q=80",
     text:[
@@ -340,13 +310,10 @@ const noticias = {
     ]
   },
 
-  // ─── ECONOMIA ────────────────────────────────────────────────────────────
-
   25:{
     tag:"Economia · RS",
     title:"Exportações do Rio Grande do Sul mostram recuperação em 2026",
     time:"Junho de 2026 · Economia Sul",
-    // Porto RS / exportações — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paranagu%C3%A1_Commercial_Harbor.jpg/1280px-Paranagu%C3%A1_Commercial_Harbor.jpg",
     imageFallback:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=900&q=80",
     text:[
@@ -360,7 +327,6 @@ const noticias = {
     tag:"Economia · SC",
     title:"Santa Catarina mantém destaque nacional na indústria e inovação",
     time:"Junho de 2026 · Economia SC",
-    // Tecnologia / inovação SC — Unsplash (Marvin Meyer, livre)
     image:"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     text:[
@@ -374,7 +340,6 @@ const noticias = {
     tag:"Economia · PR",
     title:"Paraná amplia investimentos em infraestrutura e logística",
     time:"Junho de 2026 · Governo do Paraná",
-    // Rodovia / infraestrutura — Unsplash (Caleb George, livre)
     image:"https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     text:[
@@ -388,7 +353,6 @@ const noticias = {
     tag:"Turismo · Sul",
     title:"Região Sul registra crescimento no turismo durante temporada de 2026",
     time:"Junho de 2026",
-    // Litoral SC / turismo — Unsplash (Raphael Nogueira, livre)
     image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80",
     text:[
@@ -402,7 +366,6 @@ const noticias = {
     tag:"Cultura · RS",
     title:"Porto Alegre recebe novos projetos de arte urbana e revitalização cultural",
     time:"Junho de 2026",
-    // Arte urbana / grafite — Unsplash (Tayla Kohler, livre)
     image:"https://images.unsplash.com/photo-1567604130959-7ed0e3e47b9a?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80",
     text:[
@@ -416,7 +379,6 @@ const noticias = {
     tag:"Economia · Sul",
     title:"Estados do Sul avançam em tecnologia e atração de startups",
     time:"Junho de 2026",
-    // Startups / tecnologia — Unsplash (Marvin Meyer, livre)
     image:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     text:[
@@ -430,7 +392,6 @@ const noticias = {
     tag:"Cultura · RS",
     title:"Festival da Cultura Gaúcha reúne grupos do Sul",
     time:"Junho de 2026",
-    // Chimarrão / tradição gaúcha — Wikimedia Commons, CC BY-SA 2.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chimarrao.jpg/640px-Chimarrao.jpg",
     imageFallback:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=80",
     text:[
@@ -444,7 +405,6 @@ const noticias = {
     tag:"Cinema · RS",
     title:"Festival de Cinema de Gramado prepara nova edição",
     time:"2026 · Cultura Sul",
-    // Gramado RS — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg/1280px-Gramado_-_Rio_Grande_do_Sul%2C_Brasil.jpg",
     imageFallback:"https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=80",
     text:[
@@ -458,7 +418,6 @@ const noticias = {
     tag:"Gastronomia · SC",
     title:"Oktoberfest Blumenau reforça tradição alemã em Santa Catarina",
     time:"2026 · Turismo SC",
-    // Oktoberfest Blumenau — Wikimedia Commons, CC BY 2.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg/1280px-Blumenau_-_SC_-_Oktoberfest_-_panoramio.jpg",
     imageFallback:"https://images.unsplash.com/photo-1567521464027-f127ff144326?w=900&q=80",
     text:[
@@ -472,7 +431,6 @@ const noticias = {
     tag:"Literatura · PR",
     title:"Bienal de Curitiba amplia espaço para escritores brasileiros",
     time:"2026 · Cultura PR",
-    // Livros / feira literária — Unsplash (Unseen Studio, livre)
     image:"https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80",
     text:[
@@ -486,7 +444,6 @@ const noticias = {
     tag:"Economia · RS",
     title:"PIB gaúcho cresce com recuperação do agronegócio",
     time:"2026 · Economia RS",
-    // Agronegócio RS — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PlantacaodeSoja.JPG/1280px-PlantacaodeSoja.JPG",
     imageFallback:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80",
     text:[
@@ -500,7 +457,6 @@ const noticias = {
     tag:"Economia · PR",
     title:"Paraná amplia investimentos em infraestrutura logística",
     time:"2026 · Governo do Paraná",
-    // Rodovia / logística PR — Unsplash (Caleb George, livre)
     image:"https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     text:[
@@ -514,7 +470,6 @@ const noticias = {
     tag:"Economia · SC",
     title:"Santa Catarina cresce com indústria e tecnologia",
     time:"2026 · Economia SC",
-    // Tecnologia SC — Unsplash (ThisisEngineering, livre)
     image:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     text:[
@@ -528,7 +483,6 @@ const noticias = {
     tag:"Economia · Sul",
     title:"Região Sul aumenta participação nas exportações brasileiras",
     time:"2026",
-    // Porto Paranaguá / exportações — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paranagu%C3%A1_Commercial_Harbor.jpg/1280px-Paranagu%C3%A1_Commercial_Harbor.jpg",
     imageFallback:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=900&q=80",
     text:[
@@ -542,7 +496,6 @@ const noticias = {
     tag:"Infraestrutura · PR",
     title:"Empresa investe R$ 283 milhões no Paraná e amplia produção industrial",
     time:"Junho de 2026 · Economia PR",
-    // Fábrica / industrial PR — Unsplash (Science in HD, livre)
     image:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=80",
     text:[
@@ -556,7 +509,6 @@ const noticias = {
     tag:"Aviação · Sul",
     title:"Aeroportos do Sul registram crescimento histórico em passageiros",
     time:"2026 · Turismo Sul",
-    // Aeroporto Afonso Pena Curitiba — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Aeroporto_Internacional_Afonso_Pena.jpg/1280px-Aeroporto_Internacional_Afonso_Pena.jpg",
     imageFallback:"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80",
     text:[
@@ -570,7 +522,6 @@ const noticias = {
     tag:"Agronegócio · RS",
     title:"Safra gaúcha impulsiona exportações e recuperação econômica",
     time:"2026 · Economia RS",
-    // Soja RS — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PlantacaodeSoja.JPG/1280px-PlantacaodeSoja.JPG",
     imageFallback:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80",
     text:[
@@ -584,7 +535,6 @@ const noticias = {
     tag:"Exportação · PR",
     title:"Porto de Paranaguá amplia movimentação de cargas",
     time:"2026 · Paraná",
-    // Porto de Paranaguá — Wikimedia Commons, CC BY-SA 3.0
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Paranagu%C3%A1_Commercial_Harbor.jpg/1280px-Paranagu%C3%A1_Commercial_Harbor.jpg",
     imageFallback:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=900&q=80",
     text:[
@@ -598,7 +548,6 @@ const noticias = {
     tag:"Tecnologia · SC",
     title:"Santa Catarina cresce com setor tecnológico",
     time:"2026 · Economia SC",
-    // Tecnologia / inovação — Unsplash (Marvin Meyer, livre)
     image:"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&q=80",
     text:[
@@ -612,7 +561,6 @@ const noticias = {
     tag:"Indústria · Sul",
     title:"Indústria do Sul amplia vagas e investimentos em 2026",
     time:"2026 · Economia Sul",
-    // Chão de fábrica / indústria — Unsplash (Ant Rozetsky, livre)
     image:"https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80",
     imageFallback:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
     text:[
@@ -624,8 +572,6 @@ const noticias = {
 
 };
 
-// ─── Renderização ──────────────────────────────────────────────────────────
-
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id") || 1;
 const noticia = noticias[id];
@@ -636,7 +582,6 @@ if (noticia) {
   document.getElementById("title").textContent = noticia.title;
   document.getElementById("time").textContent  = noticia.time;
 
-  // Injeta <img> real dentro da div#image
   const imgContainer = document.getElementById("image");
   const fallback = noticia.imageFallback || "";
   imgContainer.innerHTML = `

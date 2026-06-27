@@ -1,14 +1,9 @@
-/* sul.js — JavaScript compartilhado por todas as páginas */
-
-// ── DATA ─────────────────────────────────────────────────────────
 const DIAS=["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
 const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 const d=new Date();
 const el=document.getElementById("js-date");
 if(el) el.textContent=`${DIAS[d.getDay()]}, ${d.getDate()} de ${MESES[d.getMonth()]} de ${d.getFullYear()}`;
 
-// ── COTAÇÕES — AwesomeAPI gratuita ────────────────────────────────
-// Mostra USD e BRL/EUR, alternando entre as duas cotações a cada 6s
 const COINS=[
   {pair:"USD-BRL", label:"Dólar"},
   {pair:"EUR-BRL", label:"Euro"},
@@ -23,8 +18,7 @@ async function fetchCoins(){
   try{
     const pairs=COINS.map(c=>c.pair).join(",");
     const r=await fetch(`https://economia.awesomeapi.com.br/json/last/${pairs}`);
-    const j=await r.json();
-    // Normaliza: USDBRL -> USD-BRL
+    const j=await r.json();L
     coinData={};
     for(const k in j){
       const key=k.slice(0,3)+"-"+k.slice(3);
@@ -59,9 +53,7 @@ function rotateCoin(){
 }
 
 fetchCoins();
-setInterval(rotateCoin,5000); // troca a cada 5 segundos
-
-// ── TEMPERATURA — Open-Meteo gratuita ─────────────────────────────
+setInterval(rotateCoin,5000);
 (async()=>{
   const cidades=[
     {nome:"Porto Alegre",lat:-30.0346,lon:-51.2177},
@@ -84,7 +76,6 @@ setInterval(rotateCoin,5000); // troca a cada 5 segundos
   }catch(e){wx.innerHTML="<span style='color:var(--text3);font-size:11px'>—</span>";}
 })();
 
-// ── SEARCH ────────────────────────────────────────────────────────
 const veil=document.getElementById("search-veil");
 const btnS=document.getElementById("btn-search");
 if(btnS) btnS.onclick=()=>{veil.classList.add("on");document.getElementById("search-in").focus()};
@@ -93,7 +84,6 @@ if(veil){
   document.addEventListener("keydown",e=>{if(e.key==="Escape")veil.classList.remove("on")});
 }
 
-// ── LOGIN ─────────────────────────────────────────────────────────
 const mv=document.getElementById("modal-veil");
 const btnL=document.getElementById("btn-login");
 if(btnL) btnL.onclick=()=>mv.classList.add("on");

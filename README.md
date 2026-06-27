@@ -34,14 +34,6 @@ A combinação de vermelho, verde e amarelo busca representar elementos associad
 
 ---
 
-## Wireframe
-
-**Link para o Wireframe:**
-
-[https://www.figma.com/design/X71ErvspgUrF9ke5mdT9UA/Site-Regional-do-Sul?node-id=0-1&t=yQa3oPzbgEh0jbPO-1]
-
----
-
 ## Engenharia e Design do Projeto
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
@@ -63,9 +55,9 @@ O projeto encontra-se totalmente disponível para consulta pública através dos
 
 | Recurso | Descrição | Link de Acesso |
 | :--- | :--- | :--- |
-| **Ambiente de Produção** | Site hospedado e operando em nuvem | [Acessar via GitHub Pages](https://seu-usuario.github.io/nome-do-repositorio/) |
-| **Design & Prototipagem** | Wireframe e UI/UX de Alta Fidelidade | [Visualizar Projeto no Figma](Link_Do_Seu_Figma_Aqui) |
-| **Código-Fonte** | Repositório com os arquivos estruturados | [Acessar Diretório Principal](https://github.com/seu-usuario/nome-do-repositorio) |
+| **Ambiente de Produção** | Site hospedado e operando em nuvem | [Acessar via GitHub Pages](https://gui0610.github.io/Sulsemfronteiras/) |
+| **Design & Prototipagem** | Wireframe e UI/UX de Alta Fidelidade | [Visualizar Projeto no Figma](https://www.figma.com/design/X71ErvspgUrF9ke5mdT9UA/Site-Regional-do-Sul?node-id=0-1&t=3QqxXKEVBKRJXcCx-1) |
+| **Código-Fonte** | Repositório com os arquivos estruturados | [Acessar Diretório Principal](https://github.com/gui0610/Sulsemfronteiras) |
 
 ---
 
@@ -80,18 +72,3 @@ O portal foi estruturado em módulos independentes para garantir uma experiênci
   * **Economia:** Análises do agronegócio, indústrias e mercado financeiro regional.
   * **Política:** Acompanhamento legislativo, decisões governamentais e impacto público nos estados.
   * **Cultura:** Resgate histórico, tradições, eventos locais e a identidade do povo sulista.
-
----
-
-## Estrutura do Repositório
-
-O código-fonte deste portal está armazenado diretamente neste repositório e organizado de forma modular:
-
-```text
-├── index.html          # Página principal do portal jornalístico
-├── css/                # Folhas de estilo e design visual
-│   ├── style.css       # Estilização global e variáveis de cor
-│   └── responsive.css  # Regras e quebras de responsividade
-├── js/                 # Scripts e regras de negócio do sistema
-│   └── main.js         # Lógica de interação da interface
-└── assets/             # Diretório de imagens, ícones e logotipos das editorias
